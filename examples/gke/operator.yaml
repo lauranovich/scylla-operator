@@ -43,6 +43,9 @@ spec:
             agentVersion:
               description: Version of Scylla Manager Agent to use. Defaults to "latest".
               type: string
+            alternator:
+              description: Alternator designates this cluster an Alternator cluster
+              type: boolean
             cpuset:
               description: CpuSet determines if the cluster will use cpu-pinning for
                 max performance.

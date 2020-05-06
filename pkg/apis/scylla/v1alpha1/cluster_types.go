@@ -48,6 +48,8 @@ type ClusterSpec struct {
 	Version string `json:"version"`
 	// Repository to pull the image from.
 	Repository *string `json:"repository,omitempty"`
+	// Alternator designates this cluster an Alternator cluster
+	Alternator bool `json:"alternator,omitempty"`
 	// Version of Scylla Manager Agent to use. Defaults to "latest".
 	AgentVersion *string `json:"agentVersion"`
 	// Repository to pull the agent image from. Defaults to "scylladb/scylla-manager-agent".
